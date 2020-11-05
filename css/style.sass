@@ -1,0 +1,27 @@
+
+    &:after
+      content: ''
+      position: absolute
+      bottom: 0
+      left: 0
+      height: 2px
+      width: 100%
+      background-color: blue
+      transform: scaleX(0)
+      transform-origin: center
+      transition: transform .2s ease
+    &.is-active
+      cursor: default
+      &:after
+        transform: scaleX(1)
+    + .tabs__btn
+      margin-left: 2px
+
+  &__content
+    margin-top: 2px
+  &__item
+    background-color: silver
+    padding: 8px
+    display: none
+    &.is-active
+
